@@ -1,0 +1,141 @@
+[32m2023-05-29 11:55:25[0;39m [restartedMain] INFO  c.e.a.springaop.SpringAopApplication - Starting SpringAopApplication using Java 17.0.6 on DESKTOP-M1RKJ34 with PID 7172 (C:\Users\lucentinnovation\OneDrive\Desktop\Lucent Training Project\spring-boot-aop\target\classes started by lucentinnovation in C:\Users\lucentinnovation\OneDrive\Desktop\Lucent Training Project\spring-boot-aop)
+[32m2023-05-29 11:55:25[0;39m [restartedMain] DEBUG c.e.a.springaop.SpringAopApplication - Running with Spring Boot v2.4.13, Spring v5.3.13
+[32m2023-05-29 11:55:25[0;39m [restartedMain] INFO  c.e.a.springaop.SpringAopApplication - No active profile set, falling back to default profiles: default
+[32m2023-05-29 11:55:25[0;39m [restartedMain] INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+[32m2023-05-29 11:55:25[0;39m [restartedMain] INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+[32m2023-05-29 11:55:26[0;39m [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode!
+[32m2023-05-29 11:55:26[0;39m [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+[32m2023-05-29 11:55:26[0;39m [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 7 ms. Found 0 Redis repository interfaces.
+[32m2023-05-29 11:55:27[0;39m [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode!
+[32m2023-05-29 11:55:27[0;39m [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+[32m2023-05-29 11:55:27[0;39m [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 272 ms. Found 2 JPA repository interfaces.
+[32m2023-05-29 11:55:27[0;39m [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode!
+[32m2023-05-29 11:55:27[0;39m [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+[32m2023-05-29 11:55:27[0;39m [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationExtensionSupport - Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.example.aop.springaop.repository.DepartmentRepository. If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository.
+[32m2023-05-29 11:55:27[0;39m [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationExtensionSupport - Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.example.aop.springaop.repository.EmployeeRepository. If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository.
+[32m2023-05-29 11:55:27[0;39m [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 15 ms. Found 0 Redis repository interfaces.
+[32m2023-05-29 11:55:29[0;39m [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8080 (http)
+[32m2023-05-29 11:55:29[0;39m [restartedMain] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+[32m2023-05-29 11:55:29[0;39m [restartedMain] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.55]
+[32m2023-05-29 11:55:29[0;39m [restartedMain] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+[32m2023-05-29 11:55:29[0;39m [restartedMain] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 3534 ms
+[32m2023-05-29 11:55:29[0;39m [restartedMain] DEBUG c.e.a.s.filter.UniqueIdFilter - Filter 'uniqueIdFilter' configured for use
+[32m2023-05-29 11:55:29[0;39m [restartedMain] INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+[32m2023-05-29 11:55:29[0;39m [restartedMain] INFO  org.hibernate.Version - HHH000412: Hibernate ORM core version 5.4.32.Final
+[32m2023-05-29 11:55:30[0;39m [restartedMain] INFO  o.h.annotations.common.Version - HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+[32m2023-05-29 11:55:30[0;39m [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+[32m2023-05-29 11:55:30[0;39m [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+[32m2023-05-29 11:55:30[0;39m [restartedMain] INFO  org.hibernate.dialect.Dialect - HHH000400: Using dialect: org.hibernate.dialect.MySQL8Dialect
+[32m2023-05-29 11:55:32[0;39m [restartedMain] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+[32m2023-05-29 11:55:32[0;39m [restartedMain] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+[32m2023-05-29 11:55:32[0;39m [restartedMain] INFO  o.s.b.d.a.OptionalLiveReloadServer - LiveReload server is running on port 35729
+[32m2023-05-29 11:55:32[0;39m [restartedMain] INFO  c.e.aop.springaop.config.RedisConfig - Inside Jedis Connection Factory Method
+[32m2023-05-29 11:55:32[0;39m [restartedMain] INFO  c.e.aop.springaop.config.RedisConfig - RedisHost  -> localhost
+[32m2023-05-29 11:55:32[0;39m [restartedMain] INFO  c.e.aop.springaop.config.RedisConfig - RedisPort  -> 6379
+[32m2023-05-29 11:55:32[0;39m [restartedMain] INFO  c.e.aop.springaop.config.RedisConfig - ExpireTime -> 6000
+[32m2023-05-29 11:55:32[0;39m [restartedMain] INFO  c.e.aop.springaop.config.RedisConfig - Inside Redis Template Method
+[32m2023-05-29 11:55:32[0;39m [restartedMain] INFO  c.e.aop.springaop.config.RedisConfig - Inside Redis Cache Configuration Method
+[32m2023-05-29 11:55:32[0;39m [restartedMain] INFO  c.e.aop.springaop.config.RedisConfig - Duration -> 6000
+[32m2023-05-29 11:55:32[0;39m [restartedMain] INFO  c.e.aop.springaop.config.RedisConfig - Info -> Redis Cache Manager
+[33m2023-05-29 11:55:32[0;39m [restartedMain] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+[32m2023-05-29 11:55:33[0;39m [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 8080 (http) with context path ''
+[32m2023-05-29 11:55:33[0;39m [restartedMain] INFO  c.e.a.springaop.SpringAopApplication - Started SpringAopApplication in 8.579 seconds (JVM running for 10.141)
+[32m2023-05-29 11:55:33[0;39m [restartedMain] DEBUG c.e.a.springaop.SpringAopApplication - Debugging log
+[32m2023-05-29 11:55:33[0;39m [restartedMain] INFO  c.e.a.springaop.SpringAopApplication - Information log
+[33m2023-05-29 11:55:33[0;39m [restartedMain] WARN  c.e.a.springaop.SpringAopApplication - Warning log
+[31m2023-05-29 11:55:33[0;39m [restartedMain] ERROR c.e.a.springaop.SpringAopApplication - Error Log
+[32m2023-05-29 11:55:33[0;39m [pool-3-thread-1] INFO  c.e.a.springaop.SpringAopApplication - Future Class ......
+[32m2023-05-29 11:55:33[0;39m [pool-3-thread-1] INFO  c.e.a.springaop.SpringAopApplication - Task 1: Start
+[32m2023-05-29 11:55:33[0;39m [pool-2-thread-1] INFO  c.e.a.springaop.SpringAopApplication - ThreadFactory Class ......
+[32m2023-05-29 11:55:33[0;39m [pool-2-thread-1] INFO  c.e.a.springaop.SpringAopApplication - Executing task...
+[32m2023-05-29 11:55:33[0;39m [restartedMain] INFO  c.e.a.springaop.SpringAopApplication - Performing other operations...
+[32m2023-05-29 11:55:33[0;39m [pool-2-thread-1] INFO  c.e.a.springaop.SpringAopApplication - Task result: 3
+[32m2023-05-29 11:55:33[0;39m [pool-3-thread-2] INFO  c.e.a.springaop.SpringAopApplication - Task 2: Start
+[32m2023-05-29 11:55:35[0;39m [pool-3-thread-1] INFO  c.e.a.springaop.SpringAopApplication - Task 1: End
+[32m2023-05-29 11:55:35[0;39m [restartedMain] INFO  c.e.a.springaop.SpringAopApplication - Task 1 result: 1
+[32m2023-05-29 11:55:36[0;39m [pool-3-thread-2] INFO  c.e.a.springaop.SpringAopApplication - Task 2: End
+[32m2023-05-29 11:55:36[0;39m [restartedMain] INFO  c.e.a.springaop.SpringAopApplication - Task 2 result: 2
+[32m2023-05-29 11:56:07[0;39m [http-nio-8080-exec-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+[32m2023-05-29 11:56:07[0;39m [http-nio-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+[32m2023-05-29 11:56:07[0;39m [http-nio-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 2 ms
+[32m2023-05-29 11:56:07[0;39m [http-nio-8080-exec-1] INFO  c.e.a.s.service.EmployeeService - Inside findById method of Employee
+[32m2023-05-29 11:56:12[0;39m [http-nio-8080-exec-3] INFO  c.e.a.s.service.EmployeeService - Inside getAllEmployee method of EmployeeService
+[32m2023-05-29 12:02:21[0;39m [RMI TCP Connection(10)-127.0.0.1] INFO  o.s.b.a.SpringApplicationAdminMXBeanRegistrar$SpringApplicationAdmin - Application shutdown requested.
+[32m2023-05-29 12:02:22[0;39m [RMI TCP Connection(10)-127.0.0.1] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+[32m2023-05-29 12:02:22[0;39m [RMI TCP Connection(10)-127.0.0.1] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+[32m2023-05-29 12:02:22[0;39m [RMI TCP Connection(10)-127.0.0.1] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+[32m2023-05-29 12:04:07[0;39m [restartedMain] INFO  c.e.a.springaop.SpringAopApplication - Starting SpringAopApplication using Java 17.0.6 on DESKTOP-M1RKJ34 with PID 12776 (C:\Users\lucentinnovation\OneDrive\Desktop\Lucent Training Project\spring-boot-aop\target\classes started by lucentinnovation in C:\Users\lucentinnovation\OneDrive\Desktop\Lucent Training Project\spring-boot-aop)
+[32m2023-05-29 12:04:07[0;39m [restartedMain] DEBUG c.e.a.springaop.SpringAopApplication - Running with Spring Boot v2.4.13, Spring v5.3.13
+[32m2023-05-29 12:04:07[0;39m [restartedMain] INFO  c.e.a.springaop.SpringAopApplication - No active profile set, falling back to default profiles: default
+[32m2023-05-29 12:04:07[0;39m [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode!
+[32m2023-05-29 12:04:07[0;39m [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+[32m2023-05-29 12:04:07[0;39m [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 1 ms. Found 0 Redis repository interfaces.
+[32m2023-05-29 12:04:08[0;39m [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode!
+[32m2023-05-29 12:04:08[0;39m [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+[32m2023-05-29 12:04:08[0;39m [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 26 ms. Found 2 JPA repository interfaces.
+[32m2023-05-29 12:04:08[0;39m [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode!
+[32m2023-05-29 12:04:08[0;39m [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+[32m2023-05-29 12:04:08[0;39m [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationExtensionSupport - Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.example.aop.springaop.repository.DepartmentRepository. If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository.
+[32m2023-05-29 12:04:08[0;39m [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationExtensionSupport - Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.example.aop.springaop.repository.EmployeeRepository. If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository.
+[32m2023-05-29 12:04:08[0;39m [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 6 ms. Found 0 Redis repository interfaces.
+[32m2023-05-29 12:04:08[0;39m [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8080 (http)
+[32m2023-05-29 12:04:08[0;39m [restartedMain] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+[32m2023-05-29 12:04:08[0;39m [restartedMain] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.55]
+[32m2023-05-29 12:04:08[0;39m [restartedMain] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+[32m2023-05-29 12:04:08[0;39m [restartedMain] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 577 ms
+[32m2023-05-29 12:04:08[0;39m [restartedMain] DEBUG c.e.a.s.filter.UniqueIdFilter - Filter 'uniqueIdFilter' configured for use
+[32m2023-05-29 12:04:08[0;39m [restartedMain] INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+[32m2023-05-29 12:04:08[0;39m [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-2 - Starting...
+[32m2023-05-29 12:04:08[0;39m [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-2 - Start completed.
+[32m2023-05-29 12:04:08[0;39m [restartedMain] INFO  org.hibernate.dialect.Dialect - HHH000400: Using dialect: org.hibernate.dialect.MySQL8Dialect
+[32m2023-05-29 12:04:08[0;39m [restartedMain] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+[32m2023-05-29 12:04:08[0;39m [restartedMain] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+[32m2023-05-29 12:04:08[0;39m [restartedMain] INFO  o.s.b.d.a.OptionalLiveReloadServer - LiveReload server is running on port 35729
+[33m2023-05-29 12:04:08[0;39m [restartedMain] WARN  o.s.b.w.s.c.AnnotationConfigServletWebServerApplicationContext - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'redisConfig': Injection of autowired dependencies failed; nested exception is java.lang.IllegalArgumentException: Could not resolve placeholder 'spring.cache.redis.time-to-live' in value "${spring.cache.redis.time-to-live}"
+[32m2023-05-29 12:04:08[0;39m [restartedMain] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+[32m2023-05-29 12:04:08[0;39m [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-2 - Shutdown initiated...
+[32m2023-05-29 12:04:08[0;39m [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-2 - Shutdown completed.
+[32m2023-05-29 12:04:08[0;39m [restartedMain] INFO  o.a.catalina.core.StandardService - Stopping service [Tomcat]
+[32m2023-05-29 12:04:08[0;39m [restartedMain] INFO  o.s.b.a.l.ConditionEvaluationReportLoggingListener - 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+[31m2023-05-29 12:04:08[0;39m [restartedMain] ERROR o.s.boot.SpringApplication - Application run failed
+org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'redisConfig': Injection of autowired dependencies failed; nested exception is java.lang.IllegalArgumentException: Could not resolve placeholder 'spring.cache.redis.time-to-live' in value "${spring.cache.redis.time-to-live}"
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.postProcessProperties(AutowiredAnnotationBeanPostProcessor.java:405) ~[spring-beans-5.3.13.jar:5.3.13]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.populateBean(AbstractAutowireCapableBeanFactory.java:1431) ~[spring-beans-5.3.13.jar:5.3.13]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:619) ~[spring-beans-5.3.13.jar:5.3.13]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:542) ~[spring-beans-5.3.13.jar:5.3.13]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:335) ~[spring-beans-5.3.13.jar:5.3.13]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234) ~[spring-beans-5.3.13.jar:5.3.13]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:333) ~[spring-beans-5.3.13.jar:5.3.13]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:208) ~[spring-beans-5.3.13.jar:5.3.13]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:944) ~[spring-beans-5.3.13.jar:5.3.13]
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:918) ~[spring-context-5.3.13.jar:5.3.13]
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:583) ~[spring-context-5.3.13.jar:5.3.13]
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:144) ~[spring-boot-2.4.13.jar:2.4.13]
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:771) ~[spring-boot-2.4.13.jar:2.4.13]
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:763) ~[spring-boot-2.4.13.jar:2.4.13]
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:438) ~[spring-boot-2.4.13.jar:2.4.13]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:339) ~[spring-boot-2.4.13.jar:2.4.13]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1329) ~[spring-boot-2.4.13.jar:2.4.13]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1318) ~[spring-boot-2.4.13.jar:2.4.13]
+	at com.example.aop.springaop.SpringAopApplication.main(SpringAopApplication.java:27) ~[classes/:na]
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:na]
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77) ~[na:na]
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:na]
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568) ~[na:na]
+	at org.springframework.boot.devtools.restart.RestartLauncher.run(RestartLauncher.java:49) ~[spring-boot-devtools-2.4.13.jar:2.4.13]
+Caused by: java.lang.IllegalArgumentException: Could not resolve placeholder 'spring.cache.redis.time-to-live' in value "${spring.cache.redis.time-to-live}"
+	at org.springframework.util.PropertyPlaceholderHelper.parseStringValue(PropertyPlaceholderHelper.java:180) ~[spring-core-5.3.13.jar:5.3.13]
+	at org.springframework.util.PropertyPlaceholderHelper.replacePlaceholders(PropertyPlaceholderHelper.java:126) ~[spring-core-5.3.13.jar:5.3.13]
+	at org.springframework.core.env.AbstractPropertyResolver.doResolvePlaceholders(AbstractPropertyResolver.java:239) ~[spring-core-5.3.13.jar:5.3.13]
+	at org.springframework.core.env.AbstractPropertyResolver.resolveRequiredPlaceholders(AbstractPropertyResolver.java:210) ~[spring-core-5.3.13.jar:5.3.13]
+	at org.springframework.context.support.PropertySourcesPlaceholderConfigurer.lambda$processProperties$0(PropertySourcesPlaceholderConfigurer.java:175) ~[spring-context-5.3.13.jar:5.3.13]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.resolveEmbeddedValue(AbstractBeanFactory.java:936) ~[spring-beans-5.3.13.jar:5.3.13]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1321) ~[spring-beans-5.3.13.jar:5.3.13]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1300) ~[spring-beans-5.3.13.jar:5.3.13]
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.resolveFieldValue(AutowiredAnnotationBeanPostProcessor.java:656) ~[spring-beans-5.3.13.jar:5.3.13]
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.inject(AutowiredAnnotationBeanPostProcessor.java:639) ~[spring-beans-5.3.13.jar:5.3.13]
+	at org.springframework.beans.factory.annotation.InjectionMetadata.inject(InjectionMetadata.java:119) ~[spring-beans-5.3.13.jar:5.3.13]
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.postProcessProperties(AutowiredAnnotationBeanPostProcessor.java:399) ~[spring-beans-5.3.13.jar:5.3.13]
+	... 23 common frames omitted

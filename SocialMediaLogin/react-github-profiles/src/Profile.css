@@ -1,0 +1,54 @@
+.profile-container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+  }
+  
+  .profile-container .loading {
+    text-align: center;
+    margin-top: 50px;
+  }
+  
+  .profile-container .profile-info {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+  }
+  
+  .profile-container .profile-info img {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    margin-right: 20px;
+  }
+  
+  .profile-container .profile-info h2 {
+    font-size: 24px;
+    margin-bottom: 5px;
+  }
+  
+  .profile-container .profile-info p {
+    font-size: 16px;
+    margin-bottom: 10px;
+    color: #586069;
+  }
+  
+  .profile-container .repos-list {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .profile-container .repos-item {
+    margin-bottom: 10px;
+  }
+  
+  .profile-container .repos-link {
+    color: #0366d6;
+    text-decoration: none;
+    font-size: 16px;
+  }
+  
+  .profile-container .repos-link:hover {
+    text-decoration: underline;
+  }
+  

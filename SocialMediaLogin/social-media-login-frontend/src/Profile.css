@@ -1,0 +1,120 @@
+.container {
+    display: flex;
+  } 
+  
+  .profile {
+    flex: 0 0; /* Set the width of the sidebar */
+    position: fixed;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    background-color: #f6f8fa;
+    box-shadow: 2px 0 5px rgba(0, 0, 0, 0.2);
+    padding: 20px;
+    width:300px
+
+  }
+
+  .repository-list{
+    flex: 1;
+    margin-left: 300px; /* Set the same width as the sidebar */
+    padding: 20px;
+  }
+  
+  .profile-info {
+    text-align: center;
+  }
+  
+  .avatar {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+  }
+  
+  .name {
+    margin-top: 10px;
+    font-size: 28px;
+    font-weight: bold;
+  }
+  
+  .username,
+  .location,
+  .repos,
+  .followers {
+    margin-top: 5px;
+    font-size: 16px;
+  }
+  
+  .profile-link {
+    display: inline-block;
+    margin-top: 15px;
+    padding: 10px 20px;
+    background-color: #0366d6;
+    color: #ffffff;
+    text-decoration: none;
+    border-radius: 4px;
+    transition: background-color 0.3s;
+  }
+  
+  .profile-link:hover {
+    background-color: #004ba0;
+  }
+  
+  .main-content {
+    margin-left: 320px; /* Adjust as needed based on sidebar width */
+    padding: 20px;
+  }
+  
+  .repository {
+    margin-bottom: 20px;
+    padding-left: 100px;
+    padding: 20px;
+    background-color: #f6f8fa;
+    border-radius: 4px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s;
+  }
+  
+  .repository:hover {
+    transform: translateY(-3px);
+  }
+  
+  .repo-name {
+    font-size: 20px;
+    font-weight: bold;
+    color: #0366d6;
+  }
+  
+  .repo-description {
+    margin-top: 10px;
+    margin-bottom: 20px;
+    color: #586069;
+  }
+  
+  .repo-details {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  
+  .repo-details p {
+    margin-right: 200px;
+    margin-bottom: 10px;
+    font-size: 14px;
+    color: #586069;
+  }
+  
+  .repo-link {
+    display: inline-block;
+    padding: 8px 16px;
+    background-color: #0366d6;
+    color: #ffffff;
+    text-decoration: none;
+    border-radius: 4px;
+    transition: background-color 0.3s;
+  }
+  
+  .repo-link:hover {
+    background-color: #004ba0;
+  }
+  

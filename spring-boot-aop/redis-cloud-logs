@@ -1,0 +1,439 @@
+[32m2023-05-30 13:13:46[0;39m [restartedMain] INFO  c.e.a.springaop.SpringAopApplication - Starting SpringAopApplication using Java 17.0.6 on DESKTOP-M1RKJ34 with PID 31472 (C:\Users\lucentinnovation\OneDrive\Desktop\Lucent Training Project\spring-boot-aop\target\classes started by lucentinnovation in C:\Users\lucentinnovation\OneDrive\Desktop\Lucent Training Project\spring-boot-aop)
+[32m2023-05-30 13:13:46[0;39m [restartedMain] DEBUG c.e.a.springaop.SpringAopApplication - Running with Spring Boot v2.4.13, Spring v5.3.13
+[32m2023-05-30 13:13:46[0;39m [restartedMain] INFO  c.e.a.springaop.SpringAopApplication - No active profile set, falling back to default profiles: default
+[32m2023-05-30 13:13:46[0;39m [restartedMain] INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+[32m2023-05-30 13:13:46[0;39m [restartedMain] INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+[32m2023-05-30 13:13:49[0;39m [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode!
+[32m2023-05-30 13:13:49[0;39m [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+[32m2023-05-30 13:13:49[0;39m [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 19 ms. Found 0 Redis repository interfaces.
+[32m2023-05-30 13:13:50[0;39m [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode!
+[32m2023-05-30 13:13:50[0;39m [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+[32m2023-05-30 13:13:51[0;39m [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 780 ms. Found 2 JPA repository interfaces.
+[32m2023-05-30 13:13:51[0;39m [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode!
+[32m2023-05-30 13:13:51[0;39m [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+[32m2023-05-30 13:13:51[0;39m [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationExtensionSupport - Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.example.aop.springaop.repository.DepartmentRepository. If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository.
+[32m2023-05-30 13:13:51[0;39m [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationExtensionSupport - Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.example.aop.springaop.repository.EmployeeRepository. If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository.
+[32m2023-05-30 13:13:51[0;39m [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 23 ms. Found 0 Redis repository interfaces.
+[32m2023-05-30 13:13:54[0;39m [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8080 (http)
+[32m2023-05-30 13:13:54[0;39m [restartedMain] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+[32m2023-05-30 13:13:54[0;39m [restartedMain] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.55]
+[32m2023-05-30 13:13:54[0;39m [restartedMain] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+[32m2023-05-30 13:13:54[0;39m [restartedMain] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 7763 ms
+[32m2023-05-30 13:13:54[0;39m [restartedMain] DEBUG c.e.a.s.filter.UniqueIdFilter - Filter 'uniqueIdFilter' configured for use
+[32m2023-05-30 13:13:55[0;39m [restartedMain] INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+[32m2023-05-30 13:13:55[0;39m [restartedMain] INFO  org.hibernate.Version - HHH000412: Hibernate ORM core version 5.4.32.Final
+[32m2023-05-30 13:13:55[0;39m [restartedMain] INFO  o.h.annotations.common.Version - HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+[32m2023-05-30 13:13:56[0;39m [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+[32m2023-05-30 13:13:56[0;39m [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+[32m2023-05-30 13:13:56[0;39m [restartedMain] INFO  org.hibernate.dialect.Dialect - HHH000400: Using dialect: org.hibernate.dialect.MySQL8Dialect
+[32m2023-05-30 13:13:58[0;39m [restartedMain] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+[32m2023-05-30 13:13:58[0;39m [restartedMain] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+[32m2023-05-30 13:13:58[0;39m [restartedMain] INFO  o.s.b.d.a.OptionalLiveReloadServer - LiveReload server is running on port 35729
+[32m2023-05-30 13:13:59[0;39m [restartedMain] INFO  c.e.a.s.service.EmployeeService - Inside getAllEmployee method of EmployeeService
+[32m2023-05-30 13:13:59[0;39m [restartedMain] INFO  c.e.aop.springaop.config.RedisConfig - Inside Jedis Connection Factory Method
+[32m2023-05-30 13:13:59[0;39m [restartedMain] INFO  c.e.aop.springaop.config.RedisConfig - RedisHost  -> redis-12504.c212.ap-south-1-1.ec2.cloud.redislabs.com
+[32m2023-05-30 13:13:59[0;39m [restartedMain] INFO  c.e.aop.springaop.config.RedisConfig - RedisPort  -> 12504
+[32m2023-05-30 13:13:59[0;39m [restartedMain] INFO  c.e.aop.springaop.config.RedisConfig - ExpireTime -> 60000
+[32m2023-05-30 13:13:59[0;39m [restartedMain] INFO  c.e.aop.springaop.config.RedisConfig - Inside Redis Template Method
+[32m2023-05-30 13:13:59[0;39m [restartedMain] INFO  c.e.aop.springaop.config.RedisConfig - Inside Redis Cache Configuration Method
+[32m2023-05-30 13:13:59[0;39m [restartedMain] INFO  c.e.aop.springaop.config.RedisConfig - Duration -> 60000
+[32m2023-05-30 13:13:59[0;39m [restartedMain] INFO  c.e.aop.springaop.config.RedisConfig - Info -> Redis Cache Manager
+[33m2023-05-30 13:14:00[0;39m [restartedMain] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+[32m2023-05-30 13:14:01[0;39m [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 8080 (http) with context path ''
+[32m2023-05-30 13:14:01[0;39m [restartedMain] INFO  c.e.a.springaop.SpringAopApplication - Started SpringAopApplication in 15.269 seconds (JVM running for 16.876)
+[32m2023-05-30 13:14:01[0;39m [restartedMain] DEBUG c.e.a.springaop.SpringAopApplication - Debugging log
+[32m2023-05-30 13:14:01[0;39m [restartedMain] INFO  c.e.a.springaop.SpringAopApplication - Information log
+[33m2023-05-30 13:14:01[0;39m [restartedMain] WARN  c.e.a.springaop.SpringAopApplication - Warning log
+[31m2023-05-30 13:14:01[0;39m [restartedMain] ERROR c.e.a.springaop.SpringAopApplication - Error Log
+[32m2023-05-30 13:14:01[0;39m [restartedMain] INFO  c.e.a.springaop.SpringAopApplication - Performing other operations...
+[32m2023-05-30 13:14:01[0;39m [pool-2-thread-1] INFO  c.e.a.springaop.SpringAopApplication - ThreadFactory Class ......
+[32m2023-05-30 13:14:01[0;39m [pool-2-thread-1] INFO  c.e.a.springaop.SpringAopApplication - Executing task...
+[32m2023-05-30 13:14:01[0;39m [pool-2-thread-1] INFO  c.e.a.springaop.SpringAopApplication - Task result: 3
+[32m2023-05-30 13:14:01[0;39m [pool-3-thread-1] INFO  c.e.a.springaop.SpringAopApplication - Future Class ......
+[32m2023-05-30 13:14:01[0;39m [pool-3-thread-1] INFO  c.e.a.springaop.SpringAopApplication - Task 1: Start
+[32m2023-05-30 13:14:01[0;39m [pool-3-thread-2] INFO  c.e.a.springaop.SpringAopApplication - Task 2: Start
+[32m2023-05-30 13:14:03[0;39m [pool-3-thread-1] INFO  c.e.a.springaop.SpringAopApplication - Task 1: End
+[32m2023-05-30 13:14:03[0;39m [restartedMain] INFO  c.e.a.springaop.SpringAopApplication - Task 1 result: 1
+[32m2023-05-30 13:14:04[0;39m [pool-3-thread-2] INFO  c.e.a.springaop.SpringAopApplication - Task 2: End
+[32m2023-05-30 13:14:04[0;39m [restartedMain] INFO  c.e.a.springaop.SpringAopApplication - Task 2 result: 2
+[32m2023-05-30 13:16:10[0;39m [http-nio-8080-exec-2] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+[32m2023-05-30 13:16:10[0;39m [http-nio-8080-exec-2] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+[32m2023-05-30 13:16:10[0;39m [http-nio-8080-exec-2] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 3 ms
+[32m2023-05-30 13:16:10[0;39m [http-nio-8080-exec-2] INFO  c.e.a.s.service.EmployeeService - Inside getAllEmployee method of EmployeeService
+[32m2023-05-30 13:17:22[0;39m [Thread-4] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+[32m2023-05-30 13:17:22[0;39m [Thread-4] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+[32m2023-05-30 13:17:22[0;39m [Thread-4] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+[32m2023-05-30 13:17:22[0;39m [restartedMain] INFO  c.e.a.springaop.SpringAopApplication - Starting SpringAopApplication using Java 17.0.6 on DESKTOP-M1RKJ34 with PID 31472 (C:\Users\lucentinnovation\OneDrive\Desktop\Lucent Training Project\spring-boot-aop\target\classes started by lucentinnovation in C:\Users\lucentinnovation\OneDrive\Desktop\Lucent Training Project\spring-boot-aop)
+[32m2023-05-30 13:17:22[0;39m [restartedMain] DEBUG c.e.a.springaop.SpringAopApplication - Running with Spring Boot v2.4.13, Spring v5.3.13
+[32m2023-05-30 13:17:22[0;39m [restartedMain] INFO  c.e.a.springaop.SpringAopApplication - No active profile set, falling back to default profiles: default
+[32m2023-05-30 13:17:22[0;39m [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode!
+[32m2023-05-30 13:17:22[0;39m [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+[32m2023-05-30 13:17:22[0;39m [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 1 ms. Found 0 Redis repository interfaces.
+[32m2023-05-30 13:17:23[0;39m [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode!
+[32m2023-05-30 13:17:23[0;39m [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+[32m2023-05-30 13:17:23[0;39m [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 33 ms. Found 2 JPA repository interfaces.
+[32m2023-05-30 13:17:23[0;39m [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode!
+[32m2023-05-30 13:17:23[0;39m [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+[32m2023-05-30 13:17:23[0;39m [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationExtensionSupport - Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.example.aop.springaop.repository.DepartmentRepository. If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository.
+[32m2023-05-30 13:17:23[0;39m [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationExtensionSupport - Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.example.aop.springaop.repository.EmployeeRepository. If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository.
+[32m2023-05-30 13:17:23[0;39m [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 8 ms. Found 0 Redis repository interfaces.
+[32m2023-05-30 13:17:23[0;39m [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8080 (http)
+[32m2023-05-30 13:17:23[0;39m [restartedMain] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+[32m2023-05-30 13:17:23[0;39m [restartedMain] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.55]
+[32m2023-05-30 13:17:23[0;39m [restartedMain] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+[32m2023-05-30 13:17:23[0;39m [restartedMain] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 907 ms
+[32m2023-05-30 13:17:23[0;39m [restartedMain] DEBUG c.e.a.s.filter.UniqueIdFilter - Filter 'uniqueIdFilter' configured for use
+[32m2023-05-30 13:17:23[0;39m [restartedMain] INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+[32m2023-05-30 13:17:23[0;39m [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-2 - Starting...
+[32m2023-05-30 13:17:23[0;39m [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-2 - Start completed.
+[32m2023-05-30 13:17:23[0;39m [restartedMain] INFO  org.hibernate.dialect.Dialect - HHH000400: Using dialect: org.hibernate.dialect.MySQL8Dialect
+[32m2023-05-30 13:17:23[0;39m [restartedMain] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+[32m2023-05-30 13:17:23[0;39m [restartedMain] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+[32m2023-05-30 13:17:23[0;39m [restartedMain] INFO  o.s.b.d.a.OptionalLiveReloadServer - LiveReload server is running on port 35729
+[32m2023-05-30 13:17:24[0;39m [restartedMain] INFO  c.e.a.s.c.EmployeeController - Bean HelloWorld has been instantiated and I'm the init() method
+[32m2023-05-30 13:17:24[0;39m [restartedMain] INFO  c.e.a.s.service.EmployeeService - Inside getAllEmployee method of EmployeeService
+[32m2023-05-30 13:17:24[0;39m [restartedMain] INFO  c.e.aop.springaop.config.RedisConfig - Inside Jedis Connection Factory Method
+[32m2023-05-30 13:17:24[0;39m [restartedMain] INFO  c.e.aop.springaop.config.RedisConfig - RedisHost  -> redis-12504.c212.ap-south-1-1.ec2.cloud.redislabs.com
+[32m2023-05-30 13:17:24[0;39m [restartedMain] INFO  c.e.aop.springaop.config.RedisConfig - RedisPort  -> 12504
+[32m2023-05-30 13:17:24[0;39m [restartedMain] INFO  c.e.aop.springaop.config.RedisConfig - ExpireTime -> 60000
+[32m2023-05-30 13:17:24[0;39m [restartedMain] INFO  c.e.aop.springaop.config.RedisConfig - Inside Redis Template Method
+[32m2023-05-30 13:17:24[0;39m [restartedMain] INFO  c.e.aop.springaop.config.RedisConfig - Inside Redis Cache Configuration Method
+[32m2023-05-30 13:17:24[0;39m [restartedMain] INFO  c.e.aop.springaop.config.RedisConfig - Duration -> 60000
+[32m2023-05-30 13:17:24[0;39m [restartedMain] INFO  c.e.aop.springaop.config.RedisConfig - Info -> Redis Cache Manager
+[33m2023-05-30 13:17:24[0;39m [restartedMain] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+[32m2023-05-30 13:17:24[0;39m [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 8080 (http) with context path ''
+[32m2023-05-30 13:17:24[0;39m [restartedMain] INFO  c.e.a.springaop.SpringAopApplication - Started SpringAopApplication in 2.303 seconds (JVM running for 220.468)
+[32m2023-05-30 13:17:24[0;39m [restartedMain] INFO  o.s.b.d.a.ConditionEvaluationDeltaLoggingListener - Condition evaluation unchanged
+[32m2023-05-30 13:17:24[0;39m [restartedMain] DEBUG c.e.a.springaop.SpringAopApplication - Debugging log
+[32m2023-05-30 13:17:24[0;39m [restartedMain] INFO  c.e.a.springaop.SpringAopApplication - Information log
+[33m2023-05-30 13:17:24[0;39m [restartedMain] WARN  c.e.a.springaop.SpringAopApplication - Warning log
+[31m2023-05-30 13:17:24[0;39m [restartedMain] ERROR c.e.a.springaop.SpringAopApplication - Error Log
+[32m2023-05-30 13:17:24[0;39m [pool-4-thread-1] INFO  c.e.a.springaop.SpringAopApplication - ThreadFactory Class ......
+[32m2023-05-30 13:17:24[0;39m [pool-4-thread-1] INFO  c.e.a.springaop.SpringAopApplication - Executing task...
+[32m2023-05-30 13:17:24[0;39m [pool-4-thread-1] INFO  c.e.a.springaop.SpringAopApplication - Task result: 3
+[32m2023-05-30 13:17:24[0;39m [restartedMain] INFO  c.e.a.springaop.SpringAopApplication - Performing other operations...
+[32m2023-05-30 13:17:24[0;39m [pool-5-thread-1] INFO  c.e.a.springaop.SpringAopApplication - Future Class ......
+[32m2023-05-30 13:17:24[0;39m [pool-5-thread-1] INFO  c.e.a.springaop.SpringAopApplication - Task 1: Start
+[32m2023-05-30 13:17:24[0;39m [pool-5-thread-2] INFO  c.e.a.springaop.SpringAopApplication - Task 2: Start
+[32m2023-05-30 13:17:26[0;39m [pool-5-thread-1] INFO  c.e.a.springaop.SpringAopApplication - Task 1: End
+[32m2023-05-30 13:17:26[0;39m [restartedMain] INFO  c.e.a.springaop.SpringAopApplication - Task 1 result: 1
+[32m2023-05-30 13:17:27[0;39m [pool-5-thread-2] INFO  c.e.a.springaop.SpringAopApplication - Task 2: End
+[32m2023-05-30 13:17:27[0;39m [restartedMain] INFO  c.e.a.springaop.SpringAopApplication - Task 2 result: 2
+[32m2023-05-30 13:17:50[0;39m [RMI TCP Connection(6)-127.0.0.1] INFO  o.s.b.a.SpringApplicationAdminMXBeanRegistrar$SpringApplicationAdmin - Application shutdown requested.
+[32m2023-05-30 13:17:50[0;39m [RMI TCP Connection(6)-127.0.0.1] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+[32m2023-05-30 13:17:50[0;39m [RMI TCP Connection(6)-127.0.0.1] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-2 - Shutdown initiated...
+[32m2023-05-30 13:17:50[0;39m [RMI TCP Connection(6)-127.0.0.1] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-2 - Shutdown completed.
+[32m2023-05-30 13:18:13[0;39m [restartedMain] INFO  c.e.a.springaop.SpringAopApplication - Starting SpringAopApplication using Java 17.0.6 on DESKTOP-M1RKJ34 with PID 42536 (C:\Users\lucentinnovation\OneDrive\Desktop\Lucent Training Project\spring-boot-aop\target\classes started by lucentinnovation in C:\Users\lucentinnovation\OneDrive\Desktop\Lucent Training Project\spring-boot-aop)
+[32m2023-05-30 13:18:13[0;39m [restartedMain] DEBUG c.e.a.springaop.SpringAopApplication - Running with Spring Boot v2.4.13, Spring v5.3.13
+[32m2023-05-30 13:18:13[0;39m [restartedMain] INFO  c.e.a.springaop.SpringAopApplication - No active profile set, falling back to default profiles: default
+[32m2023-05-30 13:18:13[0;39m [restartedMain] INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+[32m2023-05-30 13:18:13[0;39m [restartedMain] INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+[32m2023-05-30 13:18:14[0;39m [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode!
+[32m2023-05-30 13:18:14[0;39m [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+[32m2023-05-30 13:18:14[0;39m [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 6 ms. Found 0 Redis repository interfaces.
+[32m2023-05-30 13:18:15[0;39m [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode!
+[32m2023-05-30 13:18:15[0;39m [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+[32m2023-05-30 13:18:15[0;39m [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 325 ms. Found 2 JPA repository interfaces.
+[32m2023-05-30 13:18:15[0;39m [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode!
+[32m2023-05-30 13:18:15[0;39m [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+[32m2023-05-30 13:18:15[0;39m [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationExtensionSupport - Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.example.aop.springaop.repository.DepartmentRepository. If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository.
+[32m2023-05-30 13:18:15[0;39m [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationExtensionSupport - Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.example.aop.springaop.repository.EmployeeRepository. If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository.
+[32m2023-05-30 13:18:15[0;39m [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 19 ms. Found 0 Redis repository interfaces.
+[32m2023-05-30 13:18:16[0;39m [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8080 (http)
+[32m2023-05-30 13:18:16[0;39m [restartedMain] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+[32m2023-05-30 13:18:16[0;39m [restartedMain] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.55]
+[32m2023-05-30 13:18:17[0;39m [restartedMain] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+[32m2023-05-30 13:18:17[0;39m [restartedMain] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 3185 ms
+[32m2023-05-30 13:18:17[0;39m [restartedMain] DEBUG c.e.a.s.filter.UniqueIdFilter - Filter 'uniqueIdFilter' configured for use
+[32m2023-05-30 13:18:17[0;39m [restartedMain] INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+[32m2023-05-30 13:18:17[0;39m [restartedMain] INFO  org.hibernate.Version - HHH000412: Hibernate ORM core version 5.4.32.Final
+[32m2023-05-30 13:18:17[0;39m [restartedMain] INFO  o.h.annotations.common.Version - HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+[32m2023-05-30 13:18:18[0;39m [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+[32m2023-05-30 13:18:18[0;39m [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+[32m2023-05-30 13:18:18[0;39m [restartedMain] INFO  org.hibernate.dialect.Dialect - HHH000400: Using dialect: org.hibernate.dialect.MySQL8Dialect
+[32m2023-05-30 13:18:20[0;39m [restartedMain] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+[32m2023-05-30 13:18:20[0;39m [restartedMain] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+[32m2023-05-30 13:18:20[0;39m [restartedMain] INFO  o.s.b.d.a.OptionalLiveReloadServer - LiveReload server is running on port 35729
+[32m2023-05-30 13:18:20[0;39m [restartedMain] INFO  c.e.a.s.c.EmployeeController - Bean HelloWorld has been instantiated and I'm the init() method
+[32m2023-05-30 13:18:20[0;39m [restartedMain] INFO  c.e.a.s.service.EmployeeService - Inside getAllEmployee method of EmployeeService
+[32m2023-05-30 13:18:21[0;39m [restartedMain] INFO  c.e.aop.springaop.config.RedisConfig - Inside Jedis Connection Factory Method
+[32m2023-05-30 13:18:21[0;39m [restartedMain] INFO  c.e.aop.springaop.config.RedisConfig - RedisHost  -> redis-12504.c212.ap-south-1-1.ec2.cloud.redislabs.com
+[32m2023-05-30 13:18:21[0;39m [restartedMain] INFO  c.e.aop.springaop.config.RedisConfig - RedisPort  -> 12504
+[32m2023-05-30 13:18:21[0;39m [restartedMain] INFO  c.e.aop.springaop.config.RedisConfig - ExpireTime -> 60000
+[32m2023-05-30 13:18:21[0;39m [restartedMain] INFO  c.e.aop.springaop.config.RedisConfig - Inside Redis Template Method
+[32m2023-05-30 13:18:21[0;39m [restartedMain] INFO  c.e.aop.springaop.config.RedisConfig - Inside Redis Cache Configuration Method
+[32m2023-05-30 13:18:21[0;39m [restartedMain] INFO  c.e.aop.springaop.config.RedisConfig - Duration -> 60000
+[32m2023-05-30 13:18:21[0;39m [restartedMain] INFO  c.e.aop.springaop.config.RedisConfig - Info -> Redis Cache Manager
+[33m2023-05-30 13:18:21[0;39m [restartedMain] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+[32m2023-05-30 13:18:22[0;39m [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 8080 (http) with context path ''
+[32m2023-05-30 13:18:22[0;39m [restartedMain] INFO  c.e.a.springaop.SpringAopApplication - Started SpringAopApplication in 9.815 seconds (JVM running for 11.537)
+[32m2023-05-30 13:18:22[0;39m [restartedMain] DEBUG c.e.a.springaop.SpringAopApplication - Debugging log
+[32m2023-05-30 13:18:22[0;39m [restartedMain] INFO  c.e.a.springaop.SpringAopApplication - Information log
+[33m2023-05-30 13:18:22[0;39m [restartedMain] WARN  c.e.a.springaop.SpringAopApplication - Warning log
+[31m2023-05-30 13:18:22[0;39m [restartedMain] ERROR c.e.a.springaop.SpringAopApplication - Error Log
+[32m2023-05-30 13:18:22[0;39m [pool-2-thread-1] INFO  c.e.a.springaop.SpringAopApplication - ThreadFactory Class ......
+[32m2023-05-30 13:18:22[0;39m [restartedMain] INFO  c.e.a.springaop.SpringAopApplication - Performing other operations...
+[32m2023-05-30 13:18:22[0;39m [pool-2-thread-1] INFO  c.e.a.springaop.SpringAopApplication - Executing task...
+[32m2023-05-30 13:18:22[0;39m [pool-3-thread-1] INFO  c.e.a.springaop.SpringAopApplication - Future Class ......
+[32m2023-05-30 13:18:22[0;39m [pool-3-thread-2] INFO  c.e.a.springaop.SpringAopApplication - Task 2: Start
+[32m2023-05-30 13:18:22[0;39m [pool-3-thread-1] INFO  c.e.a.springaop.SpringAopApplication - Task 1: Start
+[32m2023-05-30 13:18:22[0;39m [pool-2-thread-1] INFO  c.e.a.springaop.SpringAopApplication - Task result: 3
+[32m2023-05-30 13:18:24[0;39m [pool-3-thread-1] INFO  c.e.a.springaop.SpringAopApplication - Task 1: End
+[32m2023-05-30 13:18:24[0;39m [restartedMain] INFO  c.e.a.springaop.SpringAopApplication - Task 1 result: 1
+[32m2023-05-30 13:18:25[0;39m [pool-3-thread-2] INFO  c.e.a.springaop.SpringAopApplication - Task 2: End
+[32m2023-05-30 13:18:25[0;39m [restartedMain] INFO  c.e.a.springaop.SpringAopApplication - Task 2 result: 2
+[32m2023-05-30 13:19:54[0;39m [Thread-4] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+[32m2023-05-30 13:19:54[0;39m [Thread-4] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+[32m2023-05-30 13:19:54[0;39m [Thread-4] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+[32m2023-05-30 13:19:54[0;39m [restartedMain] INFO  c.e.a.springaop.SpringAopApplication - Starting SpringAopApplication using Java 17.0.6 on DESKTOP-M1RKJ34 with PID 42536 (C:\Users\lucentinnovation\OneDrive\Desktop\Lucent Training Project\spring-boot-aop\target\classes started by lucentinnovation in C:\Users\lucentinnovation\OneDrive\Desktop\Lucent Training Project\spring-boot-aop)
+[32m2023-05-30 13:19:54[0;39m [restartedMain] DEBUG c.e.a.springaop.SpringAopApplication - Running with Spring Boot v2.4.13, Spring v5.3.13
+[32m2023-05-30 13:19:54[0;39m [restartedMain] INFO  c.e.a.springaop.SpringAopApplication - No active profile set, falling back to default profiles: default
+[32m2023-05-30 13:19:55[0;39m [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode!
+[32m2023-05-30 13:19:55[0;39m [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+[32m2023-05-30 13:19:55[0;39m [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 2 ms. Found 0 Redis repository interfaces.
+[32m2023-05-30 13:19:55[0;39m [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode!
+[32m2023-05-30 13:19:55[0;39m [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+[32m2023-05-30 13:19:55[0;39m [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 36 ms. Found 2 JPA repository interfaces.
+[32m2023-05-30 13:19:55[0;39m [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode!
+[32m2023-05-30 13:19:55[0;39m [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+[32m2023-05-30 13:19:55[0;39m [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationExtensionSupport - Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.example.aop.springaop.repository.DepartmentRepository. If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository.
+[32m2023-05-30 13:19:55[0;39m [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationExtensionSupport - Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.example.aop.springaop.repository.EmployeeRepository. If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository.
+[32m2023-05-30 13:19:55[0;39m [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 12 ms. Found 0 Redis repository interfaces.
+[32m2023-05-30 13:19:55[0;39m [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8080 (http)
+[32m2023-05-30 13:19:55[0;39m [restartedMain] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+[32m2023-05-30 13:19:55[0;39m [restartedMain] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.55]
+[32m2023-05-30 13:19:55[0;39m [restartedMain] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+[32m2023-05-30 13:19:55[0;39m [restartedMain] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1026 ms
+[32m2023-05-30 13:19:55[0;39m [restartedMain] DEBUG c.e.a.s.filter.UniqueIdFilter - Filter 'uniqueIdFilter' configured for use
+[32m2023-05-30 13:19:55[0;39m [restartedMain] INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+[32m2023-05-30 13:19:55[0;39m [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-2 - Starting...
+[32m2023-05-30 13:19:56[0;39m [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-2 - Start completed.
+[32m2023-05-30 13:19:56[0;39m [restartedMain] INFO  org.hibernate.dialect.Dialect - HHH000400: Using dialect: org.hibernate.dialect.MySQL8Dialect
+[32m2023-05-30 13:19:56[0;39m [restartedMain] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+[32m2023-05-30 13:19:56[0;39m [restartedMain] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+[32m2023-05-30 13:19:56[0;39m [restartedMain] INFO  o.s.b.d.a.OptionalLiveReloadServer - LiveReload server is running on port 35729
+[32m2023-05-30 13:19:56[0;39m [restartedMain] INFO  c.e.a.s.c.EmployeeController - Bean HelloWorld has been instantiated and I'm the init() method
+[32m2023-05-30 13:19:56[0;39m [restartedMain] INFO  c.e.aop.springaop.config.RedisConfig - Inside Jedis Connection Factory Method
+[32m2023-05-30 13:19:56[0;39m [restartedMain] INFO  c.e.aop.springaop.config.RedisConfig - RedisHost  -> redis-12504.c212.ap-south-1-1.ec2.cloud.redislabs.com
+[32m2023-05-30 13:19:56[0;39m [restartedMain] INFO  c.e.aop.springaop.config.RedisConfig - RedisPort  -> 12504
+[32m2023-05-30 13:19:56[0;39m [restartedMain] INFO  c.e.aop.springaop.config.RedisConfig - ExpireTime -> 60000
+[32m2023-05-30 13:19:56[0;39m [restartedMain] INFO  c.e.aop.springaop.config.RedisConfig - Inside Redis Template Method
+[32m2023-05-30 13:19:56[0;39m [restartedMain] INFO  c.e.aop.springaop.config.RedisConfig - Inside Redis Cache Configuration Method
+[32m2023-05-30 13:19:56[0;39m [restartedMain] INFO  c.e.aop.springaop.config.RedisConfig - Duration -> 60000
+[32m2023-05-30 13:19:56[0;39m [restartedMain] INFO  c.e.aop.springaop.config.RedisConfig - Info -> Redis Cache Manager
+[33m2023-05-30 13:19:56[0;39m [restartedMain] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+[32m2023-05-30 13:19:56[0;39m [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 8080 (http) with context path ''
+[32m2023-05-30 13:19:56[0;39m [restartedMain] INFO  c.e.a.springaop.SpringAopApplication - Started SpringAopApplication in 2.333 seconds (JVM running for 105.694)
+[32m2023-05-30 13:19:56[0;39m [restartedMain] INFO  o.s.b.d.a.ConditionEvaluationDeltaLoggingListener - Condition evaluation unchanged
+[32m2023-05-30 13:19:56[0;39m [restartedMain] DEBUG c.e.a.springaop.SpringAopApplication - Debugging log
+[32m2023-05-30 13:19:56[0;39m [restartedMain] INFO  c.e.a.springaop.SpringAopApplication - Information log
+[33m2023-05-30 13:19:56[0;39m [restartedMain] WARN  c.e.a.springaop.SpringAopApplication - Warning log
+[31m2023-05-30 13:19:56[0;39m [restartedMain] ERROR c.e.a.springaop.SpringAopApplication - Error Log
+[32m2023-05-30 13:19:56[0;39m [pool-4-thread-1] INFO  c.e.a.springaop.SpringAopApplication - ThreadFactory Class ......
+[32m2023-05-30 13:19:56[0;39m [restartedMain] INFO  c.e.a.springaop.SpringAopApplication - Performing other operations...
+[32m2023-05-30 13:19:56[0;39m [pool-4-thread-1] INFO  c.e.a.springaop.SpringAopApplication - Executing task...
+[32m2023-05-30 13:19:56[0;39m [pool-5-thread-1] INFO  c.e.a.springaop.SpringAopApplication - Future Class ......
+[32m2023-05-30 13:19:56[0;39m [pool-4-thread-1] INFO  c.e.a.springaop.SpringAopApplication - Task result: 3
+[32m2023-05-30 13:19:56[0;39m [pool-5-thread-1] INFO  c.e.a.springaop.SpringAopApplication - Task 1: Start
+[32m2023-05-30 13:19:56[0;39m [pool-5-thread-2] INFO  c.e.a.springaop.SpringAopApplication - Task 2: Start
+[32m2023-05-30 13:19:58[0;39m [pool-5-thread-1] INFO  c.e.a.springaop.SpringAopApplication - Task 1: End
+[32m2023-05-30 13:19:58[0;39m [restartedMain] INFO  c.e.a.springaop.SpringAopApplication - Task 1 result: 1
+[32m2023-05-30 13:19:59[0;39m [pool-5-thread-2] INFO  c.e.a.springaop.SpringAopApplication - Task 2: End
+[32m2023-05-30 13:19:59[0;39m [restartedMain] INFO  c.e.a.springaop.SpringAopApplication - Task 2 result: 2
+[32m2023-05-30 13:20:08[0;39m [RMI TCP Connection(4)-127.0.0.1] INFO  o.s.b.a.SpringApplicationAdminMXBeanRegistrar$SpringApplicationAdmin - Application shutdown requested.
+[32m2023-05-30 13:20:08[0;39m [RMI TCP Connection(4)-127.0.0.1] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+[32m2023-05-30 13:20:08[0;39m [RMI TCP Connection(4)-127.0.0.1] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-2 - Shutdown initiated...
+[32m2023-05-30 13:20:08[0;39m [RMI TCP Connection(4)-127.0.0.1] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-2 - Shutdown completed.
+[32m2023-05-30 13:20:22[0;39m [restartedMain] INFO  c.e.a.springaop.SpringAopApplication - Starting SpringAopApplication using Java 17.0.6 on DESKTOP-M1RKJ34 with PID 41136 (C:\Users\lucentinnovation\OneDrive\Desktop\Lucent Training Project\spring-boot-aop\target\classes started by lucentinnovation in C:\Users\lucentinnovation\OneDrive\Desktop\Lucent Training Project\spring-boot-aop)
+[32m2023-05-30 13:20:22[0;39m [restartedMain] DEBUG c.e.a.springaop.SpringAopApplication - Running with Spring Boot v2.4.13, Spring v5.3.13
+[32m2023-05-30 13:20:22[0;39m [restartedMain] INFO  c.e.a.springaop.SpringAopApplication - No active profile set, falling back to default profiles: default
+[32m2023-05-30 13:20:22[0;39m [restartedMain] INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+[32m2023-05-30 13:20:22[0;39m [restartedMain] INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+[32m2023-05-30 13:20:23[0;39m [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode!
+[32m2023-05-30 13:20:23[0;39m [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+[32m2023-05-30 13:20:23[0;39m [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 27 ms. Found 0 Redis repository interfaces.
+[32m2023-05-30 13:20:24[0;39m [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode!
+[32m2023-05-30 13:20:24[0;39m [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+[32m2023-05-30 13:20:24[0;39m [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 205 ms. Found 2 JPA repository interfaces.
+[32m2023-05-30 13:20:24[0;39m [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode!
+[32m2023-05-30 13:20:24[0;39m [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+[32m2023-05-30 13:20:24[0;39m [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationExtensionSupport - Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.example.aop.springaop.repository.DepartmentRepository. If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository.
+[32m2023-05-30 13:20:24[0;39m [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationExtensionSupport - Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.example.aop.springaop.repository.EmployeeRepository. If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository.
+[32m2023-05-30 13:20:24[0;39m [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 12 ms. Found 0 Redis repository interfaces.
+[32m2023-05-30 13:20:25[0;39m [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8080 (http)
+[32m2023-05-30 13:20:25[0;39m [restartedMain] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+[32m2023-05-30 13:20:25[0;39m [restartedMain] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.55]
+[32m2023-05-30 13:20:25[0;39m [restartedMain] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+[32m2023-05-30 13:20:25[0;39m [restartedMain] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 3049 ms
+[32m2023-05-30 13:20:26[0;39m [restartedMain] DEBUG c.e.a.s.filter.UniqueIdFilter - Filter 'uniqueIdFilter' configured for use
+[32m2023-05-30 13:20:26[0;39m [restartedMain] INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+[32m2023-05-30 13:20:26[0;39m [restartedMain] INFO  org.hibernate.Version - HHH000412: Hibernate ORM core version 5.4.32.Final
+[32m2023-05-30 13:20:26[0;39m [restartedMain] INFO  o.h.annotations.common.Version - HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+[32m2023-05-30 13:20:26[0;39m [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+[32m2023-05-30 13:20:27[0;39m [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+[32m2023-05-30 13:20:27[0;39m [restartedMain] INFO  org.hibernate.dialect.Dialect - HHH000400: Using dialect: org.hibernate.dialect.MySQL8Dialect
+[32m2023-05-30 13:20:28[0;39m [restartedMain] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+[32m2023-05-30 13:20:28[0;39m [restartedMain] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+[32m2023-05-30 13:20:28[0;39m [restartedMain] INFO  o.s.b.d.a.OptionalLiveReloadServer - LiveReload server is running on port 35729
+[32m2023-05-30 13:20:29[0;39m [restartedMain] INFO  c.e.a.s.service.EmployeeService - Inside getAllEmployee method of EmployeeService
+[32m2023-05-30 13:20:29[0;39m [restartedMain] INFO  c.e.a.s.c.EmployeeController - Bean HelloWorld has been instantiated and I'm the init() method
+[32m2023-05-30 13:20:29[0;39m [restartedMain] INFO  c.e.aop.springaop.config.RedisConfig - Inside Jedis Connection Factory Method
+[32m2023-05-30 13:20:29[0;39m [restartedMain] INFO  c.e.aop.springaop.config.RedisConfig - RedisHost  -> redis-12504.c212.ap-south-1-1.ec2.cloud.redislabs.com
+[32m2023-05-30 13:20:29[0;39m [restartedMain] INFO  c.e.aop.springaop.config.RedisConfig - RedisPort  -> 12504
+[32m2023-05-30 13:20:29[0;39m [restartedMain] INFO  c.e.aop.springaop.config.RedisConfig - ExpireTime -> 60000
+[32m2023-05-30 13:20:29[0;39m [restartedMain] INFO  c.e.aop.springaop.config.RedisConfig - Inside Redis Template Method
+[32m2023-05-30 13:20:29[0;39m [restartedMain] INFO  c.e.aop.springaop.config.RedisConfig - Inside Redis Cache Configuration Method
+[32m2023-05-30 13:20:30[0;39m [restartedMain] INFO  c.e.aop.springaop.config.RedisConfig - Duration -> 60000
+[32m2023-05-30 13:20:30[0;39m [restartedMain] INFO  c.e.aop.springaop.config.RedisConfig - Info -> Redis Cache Manager
+[33m2023-05-30 13:20:30[0;39m [restartedMain] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+[32m2023-05-30 13:20:31[0;39m [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 8080 (http) with context path ''
+[32m2023-05-30 13:20:31[0;39m [restartedMain] INFO  c.e.a.springaop.SpringAopApplication - Started SpringAopApplication in 9.396 seconds (JVM running for 11.113)
+[32m2023-05-30 13:20:31[0;39m [restartedMain] DEBUG c.e.a.springaop.SpringAopApplication - Debugging log
+[32m2023-05-30 13:20:31[0;39m [restartedMain] INFO  c.e.a.springaop.SpringAopApplication - Information log
+[33m2023-05-30 13:20:31[0;39m [restartedMain] WARN  c.e.a.springaop.SpringAopApplication - Warning log
+[31m2023-05-30 13:20:31[0;39m [restartedMain] ERROR c.e.a.springaop.SpringAopApplication - Error Log
+[32m2023-05-30 13:20:31[0;39m [pool-2-thread-1] INFO  c.e.a.springaop.SpringAopApplication - ThreadFactory Class ......
+[32m2023-05-30 13:20:31[0;39m [restartedMain] INFO  c.e.a.springaop.SpringAopApplication - Performing other operations...
+[32m2023-05-30 13:20:31[0;39m [pool-2-thread-1] INFO  c.e.a.springaop.SpringAopApplication - Executing task...
+[32m2023-05-30 13:20:31[0;39m [pool-2-thread-1] INFO  c.e.a.springaop.SpringAopApplication - Task result: 3
+[32m2023-05-30 13:20:31[0;39m [pool-3-thread-2] INFO  c.e.a.springaop.SpringAopApplication - Task 2: Start
+[32m2023-05-30 13:20:31[0;39m [pool-3-thread-1] INFO  c.e.a.springaop.SpringAopApplication - Future Class ......
+[32m2023-05-30 13:20:31[0;39m [pool-3-thread-1] INFO  c.e.a.springaop.SpringAopApplication - Task 1: Start
+[32m2023-05-30 13:20:33[0;39m [pool-3-thread-1] INFO  c.e.a.springaop.SpringAopApplication - Task 1: End
+[32m2023-05-30 13:20:33[0;39m [restartedMain] INFO  c.e.a.springaop.SpringAopApplication - Task 1 result: 1
+[32m2023-05-30 13:20:34[0;39m [pool-3-thread-2] INFO  c.e.a.springaop.SpringAopApplication - Task 2: End
+[32m2023-05-30 13:20:34[0;39m [restartedMain] INFO  c.e.a.springaop.SpringAopApplication - Task 2 result: 2
+[32m2023-05-30 13:21:42[0;39m [http-nio-8080-exec-2] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+[32m2023-05-30 13:21:42[0;39m [http-nio-8080-exec-2] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+[32m2023-05-30 13:21:42[0;39m [http-nio-8080-exec-2] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 4 ms
+[32m2023-05-30 13:21:58[0;39m [http-nio-8080-exec-3] INFO  c.e.a.s.service.EmployeeService - Inside findById method of Employee
+[32m2023-05-30 13:22:40[0;39m [Thread-4] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+[32m2023-05-30 13:22:40[0;39m [Thread-4] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+[32m2023-05-30 13:22:40[0;39m [Thread-4] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+[32m2023-05-30 13:22:41[0;39m [restartedMain] INFO  c.e.a.springaop.SpringAopApplication - Starting SpringAopApplication using Java 17.0.6 on DESKTOP-M1RKJ34 with PID 41136 (C:\Users\lucentinnovation\OneDrive\Desktop\Lucent Training Project\spring-boot-aop\target\classes started by lucentinnovation in C:\Users\lucentinnovation\OneDrive\Desktop\Lucent Training Project\spring-boot-aop)
+[32m2023-05-30 13:22:41[0;39m [restartedMain] DEBUG c.e.a.springaop.SpringAopApplication - Running with Spring Boot v2.4.13, Spring v5.3.13
+[32m2023-05-30 13:22:41[0;39m [restartedMain] INFO  c.e.a.springaop.SpringAopApplication - No active profile set, falling back to default profiles: default
+[32m2023-05-30 13:22:41[0;39m [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode!
+[32m2023-05-30 13:22:41[0;39m [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+[32m2023-05-30 13:22:41[0;39m [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 1 ms. Found 0 Redis repository interfaces.
+[32m2023-05-30 13:22:41[0;39m [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode!
+[32m2023-05-30 13:22:41[0;39m [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+[32m2023-05-30 13:22:41[0;39m [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 24 ms. Found 2 JPA repository interfaces.
+[32m2023-05-30 13:22:41[0;39m [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode!
+[32m2023-05-30 13:22:41[0;39m [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+[32m2023-05-30 13:22:41[0;39m [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationExtensionSupport - Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.example.aop.springaop.repository.DepartmentRepository. If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository.
+[32m2023-05-30 13:22:41[0;39m [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationExtensionSupport - Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.example.aop.springaop.repository.EmployeeRepository. If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository.
+[32m2023-05-30 13:22:41[0;39m [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 7 ms. Found 0 Redis repository interfaces.
+[32m2023-05-30 13:22:41[0;39m [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8080 (http)
+[32m2023-05-30 13:22:41[0;39m [restartedMain] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+[32m2023-05-30 13:22:41[0;39m [restartedMain] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.55]
+[32m2023-05-30 13:22:41[0;39m [restartedMain] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+[32m2023-05-30 13:22:41[0;39m [restartedMain] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 619 ms
+[32m2023-05-30 13:22:41[0;39m [restartedMain] DEBUG c.e.a.s.filter.UniqueIdFilter - Filter 'uniqueIdFilter' configured for use
+[32m2023-05-30 13:22:41[0;39m [restartedMain] INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+[32m2023-05-30 13:22:41[0;39m [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-2 - Starting...
+[32m2023-05-30 13:22:41[0;39m [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-2 - Start completed.
+[32m2023-05-30 13:22:41[0;39m [restartedMain] INFO  org.hibernate.dialect.Dialect - HHH000400: Using dialect: org.hibernate.dialect.MySQL8Dialect
+[32m2023-05-30 13:22:41[0;39m [restartedMain] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+[32m2023-05-30 13:22:41[0;39m [restartedMain] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+[32m2023-05-30 13:22:42[0;39m [restartedMain] INFO  o.s.b.d.a.OptionalLiveReloadServer - LiveReload server is running on port 35729
+[32m2023-05-30 13:22:42[0;39m [restartedMain] INFO  c.e.a.s.c.EmployeeController - Bean HelloWorld has been instantiated and I'm the init() method
+[32m2023-05-30 13:22:42[0;39m [restartedMain] INFO  c.e.aop.springaop.config.RedisConfig - Inside Jedis Connection Factory Method
+[32m2023-05-30 13:22:42[0;39m [restartedMain] INFO  c.e.aop.springaop.config.RedisConfig - RedisHost  -> redis-12504.c212.ap-south-1-1.ec2.cloud.redislabs.com
+[32m2023-05-30 13:22:42[0;39m [restartedMain] INFO  c.e.aop.springaop.config.RedisConfig - RedisPort  -> 12504
+[32m2023-05-30 13:22:42[0;39m [restartedMain] INFO  c.e.aop.springaop.config.RedisConfig - ExpireTime -> 60000
+[32m2023-05-30 13:22:42[0;39m [restartedMain] INFO  c.e.aop.springaop.config.RedisConfig - Inside Redis Template Method
+[32m2023-05-30 13:22:42[0;39m [restartedMain] INFO  c.e.aop.springaop.config.RedisConfig - Inside Redis Cache Configuration Method
+[32m2023-05-30 13:22:42[0;39m [restartedMain] INFO  c.e.aop.springaop.config.RedisConfig - Duration -> 60000
+[32m2023-05-30 13:22:42[0;39m [restartedMain] INFO  c.e.aop.springaop.config.RedisConfig - Info -> Redis Cache Manager
+[33m2023-05-30 13:22:42[0;39m [restartedMain] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+[32m2023-05-30 13:22:42[0;39m [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 8080 (http) with context path ''
+[32m2023-05-30 13:22:42[0;39m [restartedMain] INFO  c.e.a.springaop.SpringAopApplication - Started SpringAopApplication in 1.811 seconds (JVM running for 142.685)
+[32m2023-05-30 13:22:42[0;39m [restartedMain] INFO  o.s.b.d.a.ConditionEvaluationDeltaLoggingListener - Condition evaluation unchanged
+[32m2023-05-30 13:22:42[0;39m [restartedMain] DEBUG c.e.a.springaop.SpringAopApplication - Debugging log
+[32m2023-05-30 13:22:42[0;39m [restartedMain] INFO  c.e.a.springaop.SpringAopApplication - Information log
+[33m2023-05-30 13:22:42[0;39m [restartedMain] WARN  c.e.a.springaop.SpringAopApplication - Warning log
+[31m2023-05-30 13:22:42[0;39m [restartedMain] ERROR c.e.a.springaop.SpringAopApplication - Error Log
+[32m2023-05-30 13:22:42[0;39m [pool-4-thread-1] INFO  c.e.a.springaop.SpringAopApplication - ThreadFactory Class ......
+[32m2023-05-30 13:22:42[0;39m [pool-4-thread-1] INFO  c.e.a.springaop.SpringAopApplication - Executing task...
+[32m2023-05-30 13:22:42[0;39m [pool-4-thread-1] INFO  c.e.a.springaop.SpringAopApplication - Task result: 3
+[32m2023-05-30 13:22:42[0;39m [restartedMain] INFO  c.e.a.springaop.SpringAopApplication - Performing other operations...
+[32m2023-05-30 13:22:42[0;39m [pool-5-thread-1] INFO  c.e.a.springaop.SpringAopApplication - Future Class ......
+[32m2023-05-30 13:22:42[0;39m [pool-5-thread-2] INFO  c.e.a.springaop.SpringAopApplication - Task 2: Start
+[32m2023-05-30 13:22:42[0;39m [pool-5-thread-1] INFO  c.e.a.springaop.SpringAopApplication - Task 1: Start
+[32m2023-05-30 13:22:44[0;39m [pool-5-thread-1] INFO  c.e.a.springaop.SpringAopApplication - Task 1: End
+[32m2023-05-30 13:22:44[0;39m [restartedMain] INFO  c.e.a.springaop.SpringAopApplication - Task 1 result: 1
+[32m2023-05-30 13:22:45[0;39m [pool-5-thread-2] INFO  c.e.a.springaop.SpringAopApplication - Task 2: End
+[32m2023-05-30 13:22:45[0;39m [restartedMain] INFO  c.e.a.springaop.SpringAopApplication - Task 2 result: 2
+[32m2023-05-30 13:24:03[0;39m [http-nio-8080-exec-2] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+[32m2023-05-30 13:24:03[0;39m [http-nio-8080-exec-2] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+[32m2023-05-30 13:24:03[0;39m [http-nio-8080-exec-2] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 14 ms
+[32m2023-05-30 13:24:37[0;39m [RMI TCP Connection(7)-127.0.0.1] INFO  o.s.b.a.SpringApplicationAdminMXBeanRegistrar$SpringApplicationAdmin - Application shutdown requested.
+[32m2023-05-30 13:24:38[0;39m [RMI TCP Connection(7)-127.0.0.1] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+[32m2023-05-30 13:24:38[0;39m [RMI TCP Connection(7)-127.0.0.1] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-2 - Shutdown initiated...
+[32m2023-05-30 13:24:38[0;39m [RMI TCP Connection(7)-127.0.0.1] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-2 - Shutdown completed.
+[32m2023-05-30 13:25:14[0;39m [restartedMain] INFO  c.e.a.springaop.SpringAopApplication - Starting SpringAopApplication using Java 17.0.6 on DESKTOP-M1RKJ34 with PID 37208 (C:\Users\lucentinnovation\OneDrive\Desktop\Lucent Training Project\spring-boot-aop\target\classes started by lucentinnovation in C:\Users\lucentinnovation\OneDrive\Desktop\Lucent Training Project\spring-boot-aop)
+[32m2023-05-30 13:25:14[0;39m [restartedMain] DEBUG c.e.a.springaop.SpringAopApplication - Running with Spring Boot v2.4.13, Spring v5.3.13
+[32m2023-05-30 13:25:14[0;39m [restartedMain] INFO  c.e.a.springaop.SpringAopApplication - No active profile set, falling back to default profiles: default
+[32m2023-05-30 13:25:14[0;39m [restartedMain] INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+[32m2023-05-30 13:25:14[0;39m [restartedMain] INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+[32m2023-05-30 13:25:15[0;39m [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode!
+[32m2023-05-30 13:25:15[0;39m [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+[32m2023-05-30 13:25:15[0;39m [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 6 ms. Found 0 Redis repository interfaces.
+[32m2023-05-30 13:25:15[0;39m [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode!
+[32m2023-05-30 13:25:15[0;39m [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+[32m2023-05-30 13:25:16[0;39m [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 319 ms. Found 2 JPA repository interfaces.
+[32m2023-05-30 13:25:16[0;39m [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode!
+[32m2023-05-30 13:25:16[0;39m [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+[32m2023-05-30 13:25:16[0;39m [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationExtensionSupport - Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.example.aop.springaop.repository.DepartmentRepository. If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository.
+[32m2023-05-30 13:25:16[0;39m [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationExtensionSupport - Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.example.aop.springaop.repository.EmployeeRepository. If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository.
+[32m2023-05-30 13:25:16[0;39m [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 19 ms. Found 0 Redis repository interfaces.
+[32m2023-05-30 13:25:17[0;39m [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8080 (http)
+[32m2023-05-30 13:25:17[0;39m [restartedMain] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+[32m2023-05-30 13:25:17[0;39m [restartedMain] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.55]
+[32m2023-05-30 13:25:17[0;39m [restartedMain] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+[32m2023-05-30 13:25:17[0;39m [restartedMain] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 2977 ms
+[32m2023-05-30 13:25:17[0;39m [restartedMain] DEBUG c.e.a.s.filter.UniqueIdFilter - Filter 'uniqueIdFilter' configured for use
+[32m2023-05-30 13:25:17[0;39m [restartedMain] INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+[32m2023-05-30 13:25:18[0;39m [restartedMain] INFO  org.hibernate.Version - HHH000412: Hibernate ORM core version 5.4.32.Final
+[32m2023-05-30 13:25:18[0;39m [restartedMain] INFO  o.h.annotations.common.Version - HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+[32m2023-05-30 13:25:18[0;39m [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+[32m2023-05-30 13:25:19[0;39m [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+[32m2023-05-30 13:25:19[0;39m [restartedMain] INFO  org.hibernate.dialect.Dialect - HHH000400: Using dialect: org.hibernate.dialect.MySQL8Dialect
+[32m2023-05-30 13:25:20[0;39m [restartedMain] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+[32m2023-05-30 13:25:20[0;39m [restartedMain] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+[32m2023-05-30 13:25:20[0;39m [restartedMain] INFO  o.s.b.d.a.OptionalLiveReloadServer - LiveReload server is running on port 35729
+[32m2023-05-30 13:25:20[0;39m [restartedMain] INFO  c.e.aop.springaop.config.RedisConfig - Inside Jedis Connection Factory Method
+[32m2023-05-30 13:25:20[0;39m [restartedMain] INFO  c.e.aop.springaop.config.RedisConfig - RedisHost  -> redis-12504.c212.ap-south-1-1.ec2.cloud.redislabs.com
+[32m2023-05-30 13:25:20[0;39m [restartedMain] INFO  c.e.aop.springaop.config.RedisConfig - RedisPort  -> 12504
+[32m2023-05-30 13:25:20[0;39m [restartedMain] INFO  c.e.aop.springaop.config.RedisConfig - ExpireTime -> 60000
+[32m2023-05-30 13:25:20[0;39m [restartedMain] INFO  c.e.aop.springaop.config.RedisConfig - Inside Redis Template Method
+[32m2023-05-30 13:25:21[0;39m [restartedMain] INFO  c.e.aop.springaop.config.RedisConfig - Inside Redis Cache Configuration Method
+[32m2023-05-30 13:25:21[0;39m [restartedMain] INFO  c.e.aop.springaop.config.RedisConfig - Duration -> 60000
+[32m2023-05-30 13:25:21[0;39m [restartedMain] INFO  c.e.aop.springaop.config.RedisConfig - Info -> Redis Cache Manager
+[33m2023-05-30 13:25:21[0;39m [restartedMain] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+[32m2023-05-30 13:25:22[0;39m [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 8080 (http) with context path ''
+[32m2023-05-30 13:25:22[0;39m [restartedMain] INFO  c.e.a.springaop.SpringAopApplication - Started SpringAopApplication in 8.539 seconds (JVM running for 10.186)
+[32m2023-05-30 13:25:22[0;39m [restartedMain] DEBUG c.e.a.springaop.SpringAopApplication - Debugging log
+[32m2023-05-30 13:25:22[0;39m [restartedMain] INFO  c.e.a.springaop.SpringAopApplication - Information log
+[33m2023-05-30 13:25:22[0;39m [restartedMain] WARN  c.e.a.springaop.SpringAopApplication - Warning log
+[31m2023-05-30 13:25:22[0;39m [restartedMain] ERROR c.e.a.springaop.SpringAopApplication - Error Log
+[32m2023-05-30 13:25:22[0;39m [pool-2-thread-1] INFO  c.e.a.springaop.SpringAopApplication - ThreadFactory Class ......
+[32m2023-05-30 13:25:22[0;39m [restartedMain] INFO  c.e.a.springaop.SpringAopApplication - Performing other operations...
+[32m2023-05-30 13:25:22[0;39m [pool-2-thread-1] INFO  c.e.a.springaop.SpringAopApplication - Executing task...
+[32m2023-05-30 13:25:22[0;39m [pool-2-thread-1] INFO  c.e.a.springaop.SpringAopApplication - Task result: 3
+[32m2023-05-30 13:25:22[0;39m [pool-3-thread-2] INFO  c.e.a.springaop.SpringAopApplication - Task 2: Start
+[32m2023-05-30 13:25:22[0;39m [pool-3-thread-1] INFO  c.e.a.springaop.SpringAopApplication - Future Class ......
+[32m2023-05-30 13:25:22[0;39m [pool-3-thread-1] INFO  c.e.a.springaop.SpringAopApplication - Task 1: Start
+[32m2023-05-30 13:25:24[0;39m [pool-3-thread-1] INFO  c.e.a.springaop.SpringAopApplication - Task 1: End
+[32m2023-05-30 13:25:24[0;39m [restartedMain] INFO  c.e.a.springaop.SpringAopApplication - Task 1 result: 1
+[32m2023-05-30 13:25:25[0;39m [pool-3-thread-2] INFO  c.e.a.springaop.SpringAopApplication - Task 2: End
+[32m2023-05-30 13:25:25[0;39m [restartedMain] INFO  c.e.a.springaop.SpringAopApplication - Task 2 result: 2
+[32m2023-05-30 13:25:27[0;39m [http-nio-8080-exec-2] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+[32m2023-05-30 13:25:27[0;39m [http-nio-8080-exec-2] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+[32m2023-05-30 13:25:27[0;39m [http-nio-8080-exec-2] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 2 ms
+[33m2023-05-30 14:13:10[0;39m [HikariPool-1 housekeeper] WARN  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=46m51s246ms910µs300ns).
+[32m2023-05-30 15:27:29[0;39m [RMI TCP Connection(81)-127.0.0.1] INFO  o.s.b.a.SpringApplicationAdminMXBeanRegistrar$SpringApplicationAdmin - Application shutdown requested.
+[32m2023-05-30 15:27:29[0;39m [RMI TCP Connection(81)-127.0.0.1] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+[32m2023-05-30 15:27:29[0;39m [RMI TCP Connection(81)-127.0.0.1] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+[32m2023-05-30 15:27:29[0;39m [RMI TCP Connection(81)-127.0.0.1] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
